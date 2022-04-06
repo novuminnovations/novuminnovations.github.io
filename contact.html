@@ -10,71 +10,32 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
-
-btn {
-	display: inline-block;
-	font-size: 3em;
-	background: none;
-	border: none;
-	cursor: pointer;
-	position: relative;
-	color: rebeccapurple;
-	transition: color .2s;
-}
-btn:after {
-	content: '';
-	position: absolute;
-	background-color: rebeccapurple;
-	z-index: -1;
-}
-btn:hover {
-	color: #FFF;
-}
-
-btn.left:after {
-	left: -.3em;
-	top: 0;
-	height: 100%;
-	width: .08em;
-	transform: skew(-20deg);
-	transition: width .2s;
-}
-  
-btn.left:hover:after {
-	width: calc(100% + .6em);
-}
-
-btn.right:after {
-	right: -.3em;
-	top: 0;
-	height: 100%;
-	width: .08em;
-	transform: skew(-20deg);
-	transition: width .2s;
-}
-btn.right:hover:after {
-	width: calc(100% + .6em);
-}
-
 </style>
 </head>
 <body>
 
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <btn class="left" onClick="window.location.href='/info.html'"><span class="w3-xxlarge w3-text-black w3-wide">Novum Innovations</span></btn>
-  </div>
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="/index.html" class="w3-bar-item w3-button"><i class="fa fa-home"></i> HOME</a>
+    <a href="/info.html" class="w3-bar-item w3-button"><i class="fa fa-info"></i> INFO</a>
+    <a href="/about.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="/contact.html" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    </a>
 </div>
 
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <btn class="right" onClick="window.location.href='/about.html'"><span class="w3-xxlarge w3-text-white w3-wide">About Us</span></btn>
+<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="/info.html" class="w3-bar-item w3-button" onclick="toggleFunction()">INFO</a>
+    <a href="/about.html" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="/contact.html" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
   </div>
 </div>
 
 <div class="bgimg-3 w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
-     <btn class="left" onClick="window.location.href='/contact.html'"><span class="w3-xxlarge w3-text-white w3-wide">Contact Information</span></btn>
+     <span class="w3-xxlarge w3-text-white w3-wide">Contact Information</span>
   </div>
 </div>
 
