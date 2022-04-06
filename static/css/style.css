@@ -22,3 +22,10 @@
 
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
+
+hr {
+  background-color: #000000;
+  border: 1px solid black;
+  border-radius: 7px 7px 7px 7px;
+  height: 2px;
+}
