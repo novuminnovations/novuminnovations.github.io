@@ -23,12 +23,11 @@
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
-hr {
-  background-color: #888888;
-  border: 1px #888888;
-  border-radius: 7px 7px 7px 7px;
-  height: 2%;
-  width: 90%;
+.rounded {
+	border-top:4px solid #bbb;
+	border-radius:5px;
+	width:86%;
+	margin:auto;
 }
 
 .text-slider-items {
