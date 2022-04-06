@@ -27,6 +27,15 @@ hr {
   background-color: #888888;
   border: 1px #888888;
   border-radius: 7px 7px 7px 7px;
-  height: 2px;
+  height: 2%;
   width: 90%;
+}
+
+.text-slider-items {
+  display: none;
+}
+
+.heading {
+  margin-top: 200px;
+  text-align: center;
 }
