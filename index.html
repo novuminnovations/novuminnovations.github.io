@@ -11,20 +11,25 @@
 
 <style>
 
+:root {
+  --text-color: #4B0082;
+}
+
 btn {
 	display: inline-block;
+  font-family: "Gilroy ExtraBold", system-ui, sans-serif;
 	font-size: 3em;
 	background: none;
 	border: none;
 	cursor: pointer;
 	position: relative;
-	color: rgb(255, 255, 255);
+	color: #FF2C75;
 	transition: color .2s;
 }
 btn:after {
 	content: '';
 	position: absolute;
-	background-color: rgb(255, 255, 255);
+	background-color: #FF2C75;
 	z-index: -1;
 }
 btn:hover {
@@ -54,13 +59,6 @@ btn.right:after {
 }
 btn.right:hover:after {
 	width: calc(100% + .6em);
-}
-
-body, html {
-  height: 100%;
-  width: 200%;
-  color: rgb(0, 0, 0);
-  line-height: 2;
 }
 
 </style>
